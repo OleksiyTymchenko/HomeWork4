@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML5</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container">
+        
+        <nav class="nav">
+          <ul class="list">
+            <li class="list__item">
+              <a href="#section">&lt;section&gt;</a>
+            </li>
+            <!-- /.list__item -->
+            <li class="list__item">
+              <a href="#article">&lt;article&gt;</a>
+            </li>
+            <!-- /.list__item -->
+            <li class="list__item">
+              <a href="#header">&lt;header&gt;</a>
+            </li>
+            <!-- /.list__item -->
+            <li class="list__item">
+              <a href="#footer">&lt;footer&gt;</a>
+            </li>
+            <!-- /.list__item -->
+          </ul>
+          <!-- /.list -->
+        </nav>
+        <!-- /.nav -->
+      </div>
+      <!-- /.container -->
+
+      <div class="burger">
+        <input type="checkbox" id="burger-toggle" />
+        <label for="burger-toggle" class="burger-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <nav class="burger-menu">
+          <ul>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#section">&lt;section&gt;</a></li>
+            <li><a href="#article">&lt;article&gt;</a></li>
+            <li><a href="#header">&lt;header&gt;</a></li>
+            <li><a href="#footer">&lt;footer&gt;</a></li>
+            <li>
+              <a href="#portfolio">
+                <svg class="email">
+                  <use xlink:href="./img/header/email.svg#email"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg class="email">
+                  <use xlink:href="./img/header/instagram.svg#inst"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg class="email">
+                  <use xlink:href="./img/header/facebook.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!-- /.burger -->
+    </header>
+
+    <main class="main">
+      <section id="home" class="section hero">
+        <div class="container">
+          <h1>HTML5 Семантичні елементи</h1>
+          <p>
+            Семантичний елемент чітко описує його значення як для браузера, так
+            і<br />
+            для розробника.
+          </p>
+          <p>
+            Приклади не <b>семантичних</b> елементів: &lt;div&gt; і
+            &lt;span&gt;- нічого не говорить<br />
+            про його вміст.
+          </p>
+          <p>
+            Приклади <b>семантичних</b> елементів: &lt;form&gt;, &lt;table&gt; і
+            &lt;article&gt; - чітко визначає його зміст.
+          </p>
+          <h2>
+            Підтримка браузерів
+          </h2>
+          <div class="icons">
+
+            <img src="./img/hero/chrome.png" alt="1">
+            <img src="./img/hero/e.png" alt="1">
+            <img src="./img/hero/mozila.png" alt="1">
+            <img src="./img/hero/opera.png" alt="1">
+            <img src="./img/hero/safari.png" alt="1">
+          </div>
+          <!-- /.icons -->
+          <p>
+            Семантичні елементи HTML5 підтримуються у всіх сучасних браузерах.
+          </p>
+          <p>
+            Крім того, ви можете "навчити" старих браузерів, як обробляти "невідомі
+елементи".
+          </p>
+          <p>
+            Прочитайте про це в <a href="#">підтримці браузера HTML5</a> .
+          </p>
+
+          <h2>Нові семантичні елементи в HTML5</h2>
+          <p>HTML5 пропонує нові семантичні елементи для визначення різних частин<br>
+            веб-сторінки:
+          </p>
+            <ul>
+              <li>&lt;section&gt;</li>
+              <li>&lt;article&gt;</li>
+              <li>&lt;header&gt;</li>
+              <li>&lt;footer&gt;</li>
+            </ul>
+            <h2 id="section">HTML5 &lt;section&gt; елемент</h2>
+            <p>
+              Елемент &lt;section&gt;визначає розділ в документі.
+            </p>
+            <p>
+              Згідно з документацією в3к'с HTML5: "розділ представляє собою<br>
+тематичну угруповання контенту, зазвичай з заголовком".
+            </p>
+            <p>
+              Домашня сторінка зазвичай може бути розділена на розділи для<br>
+ознайомлення, змісту і контактної інформації.
+
+            </p>
+            <img class="example" src="./img/hero/example.png" alt="Example">
+            <h2 id="article">HTML5 &lt;article&gt; елемент</h2>
+            <p>Елемент &lt;article&gt;визначає незалежний, автономний вміст.</p>
+            <p>
+              Стаття повинна мати сенс самостійно, і вона повинна мати можливість<br>
+читати його незалежно від іншої частини веб-сайту.
+            </p>
+            <p>
+              Приклади того, де можна використовувати елемент &lt;article&gt;:
+            </p>
+            <ul>
+              <li>Повідомлення на форумі</li>
+              <li>блозі</li>
+              <li>Газетна стаття</li>
+            </ul>
+            <img class="example" src="./img/hero/example-2.png" alt="Example">
+            <h2 id="header">HTML5 &lt;header&gt; елемент</h2>
+            <p>Елемент &lt;header&gt;задає заголовок для документа або розділу.</p>
+            <p>Елемент &lt;header&gt;повинен використовуватися в якості контейнера для
+              вступного змісту.</p>
+              <p>
+                В одному документі може бути кілька елементів &lt;header&gt;.
+
+              </p>
+              <p>
+                У наступному прикладі визначається заголовок для статті:
+
+              </p>
+              <img class="example" src="./img/hero/example-3.png" alt="Example">
+              <h2 id="footer">
+                HTML5 &lt;footer&gt; елемент
+
+              </h2>
+              <p>
+                Елемент &lt;footer&gt;вказує нижній колонтитул для документа або розділу.
+              </p>
+              <p>
+                Нижній колонтитул зазвичай містить автора документа, інформацію про<br>
+авторське право, посилання на умови використання, контактні дані і т.д.
+              </p>
+              <p>В одному документі може бути кілька елементів &lt;footer&gt;.</p>
+              <img class="example" src="./img/hero/example-4.png" alt="Example">
+        </div>
+        <!-- /.container -->
+      </section>
+      <!-- /.section -->
+      <section class="section">
+        <div class="container">
+          <iframe src="https://oleksiytymchenko.github.io/CV/" ></iframe>
+          <video width="420" height="315"
+src="https://www.youtube.com/watch?v=dEBVe8Ij7JU&list=PLytQ0YczAfcdj-OUqWO20vPsr0ix0M1Us">
+</video>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/watch?v=dEBVe8Ij7JU&list=PLytQ0YczAfcdj-OUqWO20vPsr0ix0M1Us&ab_channel=BeetrootAcademy" frameborder="0" allowfullscreen></iframe>
+
+        </div>
+        <!-- /.container -->
+      </section>
+      <!-- /.section -->
+    </main>
+    <footer id="footer" class="footer none">
+      <div class="container">
+        <div class="footer-list">
+          <div class="footer-list__item">
+            <a href="#home">Home</a>
+          </div>
+          <!-- /.footer-list__item -->
+          <div class="footer-list__item">
+            <a href="#home">About</a>
+          </div>
+          <!-- /.footer-list__item -->
+          <div class="footer-list__item">
+            <a href="#home">Menu</a>
+          </div>
+          <!-- /.footer-list__item -->
+          <div class="footer-list__item">
+            <a href="#home">Info</a>
+          </div>
+          <!-- /.footer-list__item -->
+          <div class="footer-list__item">
+            <a href="#home">Contact</a>
+          </div>
+          <!-- /.footer-list__item -->
+          <div class="footer-list__item">
+            <a href="#home">Bookings</a>
+          </div>
+          <!-- /.footer-list__item -->
+          <div class="footer-list__item">
+            <a href="#home">Privacy Policy</a>
+          </div>
+          <!-- /.footer-list__item -->
+        </div>
+        <!-- /.footer-list -->
+
+        <div class="footer-list">
+          <div class="footer-list__item">
+            <a href="#home">Style Guide</a>
+          </div>
+          <!-- /.footer-list__item -->
+          <div class="footer-list__item">
+            <a href="#home">Licenses</a>
+          </div>
+          <!-- /.footer-list__item -->
+          <div class="footer-list__item">
+            <a href="#home">Instructions</a>
+          </div>
+          <!-- /.footer-list__item -->
+          <div class="footer-list__item">
+            <a href="#home">Changelog</a>
+          </div>
+          <!-- /.footer-list__item -->
+          <div class="footer-list__item">
+            <a href="#home">Password</a>
+          </div>
+          <!-- /.footer-list__item -->
+          <div class="footer-list__item">
+            <a href="#home">404</a>
+          </div>
+          <!-- /.footer-list__item -->
+        </div>
+        <!-- /.footer-list -->
+      </div>
+      <!-- /.container -->
+      <div class="copyright">
+        <div class="container">
+          <div class="footer-list">
+            <div class="footer-list__item">
+              <a href="#home">© Latte Cafe 2022.</a>
+            </div>
+            <!-- /.footer-list__item -->
+            <div class="footer-list__item">
+              <a href="#home">Built by Nikolai Bain.</a>
+            </div>
+            <!-- /.footer-list__item -->
+            <div class="footer-list__item">
+              <a href="#home">Powered by Webflow.</a>
+            </div>
+            <!-- /.footer-list__item -->
+          </div>
+          <!-- /.footer-list -->
+        </div>
+        <!-- /.container -->
+      </div>
+      <!-- /.copyright -->
+    </footer>
+  </body>
+</html>
